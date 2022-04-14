@@ -1,0 +1,22 @@
+.flex-container {
+  display: flex;
+  background-color: red;
+}
+
+.flex-container > div {
+  background-color: dodgerBlue;
+  margin: 10px;
+  padding: 50px;
+  font-size: 30px;
+}
+
+.f1{
+  font-family:"Times New Roman", Times, serif;
+}
+.f2{
+  font-family:Arial, Helvetica, sans-serif;
+}
+.f3{
+  font-family:"Lucida Console", "Courier New", monospace;
+}
+}

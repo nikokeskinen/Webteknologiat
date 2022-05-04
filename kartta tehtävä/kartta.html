@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script defer src="script.js"></script>
+<body>
+    <div class="Kartta" style="
+    padding:1%;
+    margin: auto;
+    width: 50%;
+    text-align: center;">
+        <iframe id="inlineFrameExample" title="Inline Frame Example" width="500" height="400" window.onload=function(){
+            src="https://www.google.com/maps?q=Yliopistonkatu 36 Lappeenranta&output=embed">}
+        </iframe>
+    </div>
+
+    <div>
+        <p id="info"></p>
+    </div>
+
+    <div class="teksti" style="
+    padding:1%;
+    margin: auto;
+    width: 50%;
+    text-align: center;">
+        <label for="name">Katuosoite:</label>
+        <input type="text" id="osoiteArvo" name="name" required minlength="1" maxlength="25" size="15">
+        <label for="name">Kaupunki:</label>
+        <input type="text" id="kaupunkiArvo" name="name" required minlength="1" maxlength="25" size="15">
+
+        <button onclick="myFunction()">Hae</button>
+        <script defer src="script.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Laskin</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div>
+
+<h2>Laskin</h2>
+<input type="number" placeholder="1. Numero" id="number1">
+<input type="number" placeholder="2. Numero" id="number2"><br>
+<button id= pls>+</button>
+<button id= min>-</button>
+<button id= ker>*</button>
+<button id= jak>/</button><br>
+<input type="number" id="result" readonly>
+</div>
+<script type="text/javascript">
+  var n1 = document.getElementById('number1');
+  var n2 = document.getElementById('number2');
+  var res = document.getElementById('result');
+
+  document.getElementById("pls").addEventListener("click",function() {
+    res.value =
+    parseInt(n1.value)+parseInt(n2.value)});
+    document.getElementById("min").addEventListener("click",function() {
+      res.value =
+      parseInt(n1.value)-parseInt(n2.value)});
+      document.getElementById("ker").addEventListener("click",function() {
+        res.value =
+        parseInt(n1.value)*parseInt(n2.value)});
+        document.getElementById("jak").addEventListener("click",function() {
+          res.value =
+          parseInt(n1.value)/parseInt(n2.value)});
+
+</script>
+
+  </body>
+</html>
